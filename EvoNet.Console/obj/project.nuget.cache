@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "j5hkMUdcDv7moCGyfO0Aa9LVA9zeQd5lDkhvG7Qktjgy9VqD+R22T6ljfLMLsX6muO2O0lS8pVxF85jKGm8zwA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Nwint\\source\\repos\\EvoNet\\EvoNet.Console\\EvoNet.Console.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Nwint\\.nuget\\packages\\spectre.console\\0.46.0\\spectre.console.0.46.0.nupkg.sha512",
+    "C:\\Users\\Nwint\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512"
+  ],
+  "logs": []
+}
