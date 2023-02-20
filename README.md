@@ -24,8 +24,8 @@ To run the simulation, compile and run the project from the command line:
 
 ### Production:
 
-### Contributing:
+## Contributing:
 
 
-### License:
+## License:
  
