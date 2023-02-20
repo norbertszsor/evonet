@@ -10,7 +10,7 @@ namespace EvoNet.Core.Transfer.Inner
     {
         public int InputSize { get; set; }
         public int OutputSize { get; set; }
-        public int HddenSize { get; set; }
+        public int HiddenSize { get; set; }
         public List<double[]>? Weights { get; set; }
     }
 }

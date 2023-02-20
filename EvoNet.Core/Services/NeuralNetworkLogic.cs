@@ -22,26 +22,25 @@ namespace EvoNet.Core.Services
             var hidden = new List<double>();
             var output = new List<double>();
 
-            for (int i = 0; i < _neuralNetwork.HddenSize; i++)
+            for (var i = 0; i < _neuralNetwork.HiddenSize; i++)
             {
-
                 var sum = 0.0;
 
-                for (int j = 0; j < _neuralNetwork.InputSize; j++)
+                for (var j = 0; j < _neuralNetwork.InputSize; j++)
                 {
-                   sum += input[j] * _neuralNetwork.Weights[0][j * _neuralNetwork.HddenSize+ i];
+                    sum += input[j] * _neuralNetwork.Weights![0][j * _neuralNetwork.HiddenSize + i];
                 }
 
                 hidden.Add(ActivationFunction(sum));
             }
 
-            for (int i = 0; i < _neuralNetwork.OutputSize; i++)
+            for (var i = 0; i < _neuralNetwork.OutputSize; i++)
             {
                 var sum = 0.0;
 
-                for (int j = 0; j< _neuralNetwork.HddenSize; j++)
+                for (var j = 0; j < _neuralNetwork.HiddenSize; j++)
                 {
-                    sum += hidden[j] * _neuralNetwork.Weights[1][j * _neuralNetwork.OutputSize + i];
+                    sum += hidden[j] * _neuralNetwork.Weights![1][j * _neuralNetwork.OutputSize + i];
                 }
 
                 output.Add(ActivationFunction(sum));
@@ -50,9 +49,9 @@ namespace EvoNet.Core.Services
             return output;
         }
 
-        private double ActivationFunction(double x)
+        private static double ActivationFunction(double x)
         {
-            return 1/(1+ Math.Exp(-x));
+            return 1 / (1 + Math.Exp(-x));
         }
     }
 }
