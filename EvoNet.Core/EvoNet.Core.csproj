@@ -7,14 +7,19 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <Compile Remove="EntityModels\**" />
+      <EmbeddedResource Remove="EntityModels\**" />
+      <None Remove="EntityModels\**" />
+    </ItemGroup>
+
+    <ItemGroup>
       <Folder Include="Entities" />
-      <Folder Include="EntityModels" />
-      <Folder Include="Enums" />
-      <Folder Include="Services" />
-      <Folder Include="Transfer" />
       <Folder Include="Utilities\Extensions" />
-      <Folder Include="Utilities\Helpers" />
       <Folder Include="Utilities\Mappers" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\EvoNet.Interfaces\EvoNet.Interfaces.csproj" />
     </ItemGroup>
 
 </Project>

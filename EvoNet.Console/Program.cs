@@ -1,11 +1,12 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-using EvoNet.Console;
+using EvoNet.Core.Services;
+using EvoNet.Interfaces.Core.Services;
 using Spectre.Console;
 
 
 
-IMatrixLogic logicTest = new MatrixLogic();
+IEnvironmnetLogic logicTest = new EnvironmentLogic();
 
 logicTest.Initialize(10,10);
 logicTest.Describe();

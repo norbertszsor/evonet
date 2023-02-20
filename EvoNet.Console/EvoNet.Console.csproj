@@ -8,11 +8,18 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <Compile Remove="Views\**" />
+      <EmbeddedResource Remove="Views\**" />
+      <None Remove="Views\**" />
+    </ItemGroup>
+
+    <ItemGroup>
       <PackageReference Include="Spectre.Console" Version="0.46.0" />
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Views" />
+      <ProjectReference Include="..\EvoNet.Core\EvoNet.Core.csproj" />
+      <ProjectReference Include="..\EvoNet.Interfaces\EvoNet.Interfaces.csproj" />
     </ItemGroup>
 
 </Project>

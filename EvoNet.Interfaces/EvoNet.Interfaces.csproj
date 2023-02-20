@@ -7,8 +7,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Core\Services" />
-      <Folder Include="Core\Transfer" />
+      <Folder Include="Core\Transfer\Data\" />
       <Folder Include="Persistence\Repositories" />
     </ItemGroup>
 
